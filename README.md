@@ -1,9 +1,3 @@
-# Group8
-Group 8's Final Project - Member: Melvin Lin
-
-# Proposal 
-Project Slide: 15
-
 ### A Receipt Parser Using Google Vision API and OpenCV
 
 The parser intakes a input directory that finds the corners for each respective receipt, applies a four-point perspective transformation, creates a python dictionary from the annotations from the Google Vision API for the receipts, and outputs the parsed values into a .csv file called receipt.csv. This project utilizes a GitHub repository called [OpenCV-Document-Scanner](https://github.com/andrewdcampbell/OpenCV-Document-Scanner) to scan the receipts. The code was modified accordingly based on whether the receipt was printed with a non-white underside or not to apply the adaptive color threshold. Most receipts only required the cropping and gray-scaling. In addition, the use of the Google Vision API was rooted in a [medium article](https://betterprogramming.pub/google-vision-and-google-sheets-api-line-by-line-receipt-parsing-2e2661261cda). 
